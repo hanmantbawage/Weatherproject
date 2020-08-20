@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        html,
+        body {
+            margin: 0px;
+        }
+    </style>
+    <script>
+        var d =new Date();
+        document.querySelector("#datetime").innerHTML =d;
+    </script>
+    <script src="weather.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row  bg-info " style="height: 60px; border-bottom:1px solid red;">
+            <div class="col-4 d-flex align-items-center "><h3 style="font-family:cursive;"> Get Weather Report</h2>
+
+            </div>
+            <div class="col-4 bg-danger d-flex justify-content-center" id="datetime"> </div>
+            <div class="col-4 d-flex "><input id="textid" type="text" placeholder="enter city" style="height: 30px;margin-top: 10px;border:1px solid red;">
+                <button  style="height: 30px;margin:10px;border:1px solid red; background: white;color: red;" onclick="getWeather()">
+                    <h5>Search</h5>
+                </button>
+            </div>
+        </div>
+        <div id="second" class="row justify-content-center" style="height: 90vh;background-color: rgb(215, 255, 182);display: none;">
+            <div class="col-4 m-2" style="background-color: turquoise; border:1px solid red;height: 85vh;">
+                <div id="cityname">  </div><br>
+                <div id="tempp"></div><br>
+                <div id="humidity"></div><br>
+                <div id="wind-Speed"></div><br>
+                <div id="main"></div><br>
+                <div><label for=""></label></div><br>
+            </div>
+        </div>
+
+        <div id="first" class="row  justify-content-center" style="height: 90vh;background-color: rgb(215, 255, 182); ">
+            <div class="col-4 m-5 d-flex justify-content-center align-items-center" style="background-color: turquoise; border:1px solid red;">
+
+               <b style=" color: red;"> LETS SEE YOUR CITIES WEATHER !!!!</b>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
